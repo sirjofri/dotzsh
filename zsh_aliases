@@ -1,2 +1,11 @@
 alias ls='ls --color=auto'
-alias sl='echo "No Steam Locomotive... tuff tuff...";ls'
+alias tetris='tetris -fgp'
+
+alias -s pdf='zathura'
+alias -s md='vim'
+alias -s tex='vim'
+alias -s txt='vim'
+alias -s html='w3m'
+alias -s png='feh'
+alias -s jpg='feh'
+alias -s ff='lel-open'

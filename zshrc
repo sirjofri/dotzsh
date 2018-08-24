@@ -18,7 +18,11 @@ source ~/.zsh/zsh_aliases
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
+setopt correct
+setopt hist_ignore_all_dups
 setopt prompt_subst
 RPROMPT='%F{cyan}$vcs_info_msg_0_%f'
 zstyle ':vcs_info:git:*' formats '%b'
 PROMPT='%F{yellow}%n%f%F{blue}@%F{green}%m%f %F{yellow}%1~%f %F{cyan}%#%f '
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
