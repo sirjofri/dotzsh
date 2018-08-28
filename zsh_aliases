@@ -1,5 +1,5 @@
 alias ls='ls --color=auto'
-alias tetris='tetris -fgp'
+alias tetris='tetris2 -fgp'
 
 alias -s pdf='zathura'
 alias -s md='vim'
