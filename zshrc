@@ -18,6 +18,8 @@ source ~/.zsh/zsh_aliases
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
+zle -N edit-command-line
+bindkey -M vicmd ' ' edit-command-line
 setopt correct
 setopt hist_ignore_all_dups
 setopt prompt_subst
