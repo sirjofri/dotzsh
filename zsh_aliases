@@ -1,5 +1,7 @@
 alias ls='ls --color=auto'
 alias tetris='tetris2 -fgp'
+alias pdfpre='pdftotext -layout - | less -R'
+alias calf='$EDITOR ~/lib/calendar'
 
 alias -s pdf='zathura'
 alias -s md='vim'
@@ -9,3 +11,4 @@ alias -s html='w3m'
 alias -s png='feh'
 alias -s jpg='feh'
 alias -s ff='lel-open'
+alias -s pdf='pdftotext -layout - | less -R'

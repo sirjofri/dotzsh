@@ -29,3 +29,5 @@ zstyle ':vcs_info:git:*' formats '%b'
 PROMPT='%F{yellow}%n%f%F{blue}@%F{green}%m%f %F{yellow}%1~%f %F{cyan}%#%f '
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+cal -3 -w && calendar
