@@ -30,4 +30,7 @@ PROMPT='%F{yellow}%n%f%F{blue}@%F{green}%m%f %F{yellow}%1~%f %F{cyan}%#%f '
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-( if [ "$(tput cols)" -gt "64" ]; then cal -3 -w --color=always; else cal -w --color=always; fi && echo "Next Dates:" && calendar -y -p2 ) | lolcat
+welcome() {
+	( if [ "$(tput cols)" -gt "64" ]; then cal -3 -w --color=always; else cal -w --color=always; fi && echo "Next Dates:" && calendar -y -p2 && yes '=' | head -n$(tput cols) | tr -d '\n' ) | lolcat
+}
+welcome
